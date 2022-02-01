@@ -26,16 +26,3 @@ void loop() {
     }
   }
 }
-
-
-
-void test() {
-  if (digitalRead(buttonPin) == HIGH)
-    analogWrite(led, brightness );
-  brightness = brightness - 5;
-  if (brightness <= 255) {
-    brightness = 0;
-  }
-  delay(10);
-
-}
